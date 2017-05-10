@@ -9,8 +9,21 @@
 .page {
   width: 8.5in;
   height: 11in;
-  border-width: 2px;
-  border-color: blue;
-  background-color: yellow;
+  background-color: Silver;
+
 }
 
+section {
+  background-color: Peru;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: red
+}
+
+section#contact-info {
+  margin-left: 10%;
+  margin-right: 10%;
+}
