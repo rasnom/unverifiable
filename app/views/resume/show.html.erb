@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Ransom Byers: Software Engineer</title>
   <link rel="stylesheet" href="../assets/stylesheets/resume.css"
 </head>
+
 <body>
 
 <div class=page>
@@ -24,6 +26,13 @@
     </div>
   </section>
 
+  <section id="summary">
+    <h2> Summary </h2>
+    <p>
+      I will be of huge benefit to the company, but possibly in ways you are not yet expecting.
+    </p>
+  </section>
+
   <section id="real-talk">
     <h2> What I actually think is important </h2>
     <ul>
@@ -34,30 +43,45 @@
 
   <section id="skills">
     <h2> Skill Salad </h2>
-    <ul>
-      <li class="software"> Ruby </li>
-      <li class="software"> C++ </li>
-      <li class="software"> Python </li>
-      <li class="software"> SQL </li>
-      <li class="software"> Ruby on Rails </li>
-      <li class="software"> Matlab </li>
-      <li class="software"> Unix/Linux </li>
-      <li class="software"> AJAX </li>
-      <li class="software"> CSS </li>
-      <li class="software"> Capybara </li>
-      <li class="software"> RSpec </li>
-      <li class="pm"> Agile </li>
-      <li class="pm"> Prioritization </li>
-      <li class="pm"> User Oriented Design </li>
-      <li class="pm"> Conflict Resolution </li>
-      <li class="pm"> Strategic Planning </li>
-      <li class="pm"> TDD </li>
-      <li class="pm"> Quality Assurance </li>
-    </ul>
+    <div id="skill-salad" width="100%"> </div>
+    <script type="text/javascript">
+      var word_array = [
+          {text: "Lorem", weight: 15},
+          {text: "Ipsum", weight: 9, link: "http://jquery.com/"},
+          {text: "Dolor", weight: 6, html: {title: "I can haz any html attribute"}},
+          {text: "Sit", weight: 7},
+          {text: "Amet", weight: 5},
+          // ...as many words as you want
+          {text: "Ruby", weight: 9},
+          {text: "C++", weight: 9},
+          {text: "Python", weight: 9},
+          {text: "SQL", weight: 9},
+          {text: "Ruby on Rails", weight: 9},
+          {text: "Matlab", weight: 9},
+          {text: "Unix/Linux", weight: 9},
+          {text: "AJAX", weight: 9},
+          {text: "CSS", weight: 9},
+          {text: "Capybara", weight: 9},
+          {text: "RSpec", weight: 9},
+          {text: "Agile", weight: 9},
+          {text: "Prioritization", weight: 9},
+          {text: "User Oriented Design", weight: 9},
+          {text: "Conflict Resolution", weight: 9},
+          {text: "Strategic Planning", weight: 9},
+          {text: "TDD", weight: 9},
+          {text: "Quality Assurance", weight: 9}
+      ];
+
+      $(function() {
+        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+        $("#skills").jQCloud(word_array);
+      });
+    </script>
+
   </section>
 
-  <section id="experience">
-    <h2> Experience </h2>
+  <section id="context">
+    <h2> Context </h2>
 
     <div class="job">
       <span class="name">
