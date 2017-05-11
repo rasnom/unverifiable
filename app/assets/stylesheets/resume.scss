@@ -5,49 +5,65 @@
 /*
 *= require jqcloud
 */
-* {
-  border-style: solid;
-  border-width: 1px;
-  border-color: red
+body {
+  background-color: Black;
 }
 
+* {
+  border-style: solid;
+  border-width: 0;
+  border-color: red
+}
 
 .page {
   width: 8.5in;
   height: 11in;
-  background-color: Silver;
+  background-color: White;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana;
 }
 
 section {
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 5px;
   padding: 0;
 }
 
 section#header {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: Peru;
+  background-color: Silver;
   text-align: center;
+}
+
+#name {
+  font-size: 2.5rem;
+}
+
+#tagline {
+  font-size: 1.5rem;
 }
 
 section h2 {
   margin: 0;
-  background-color: Peru;
+  padding-left: 40px;
+  background-color: Silver;
 }
-.job {
-  margin-right: 5px;
-  margin-left: 5px;
+
+section > div {
+  margin-right: 0.5in;
+  margin-left: 0.5in;
 }
 
 .location, .dates, .github{
   float: right;
 }
 
-.name {
+.company {
   float: left;
   width: 20%;
 }
