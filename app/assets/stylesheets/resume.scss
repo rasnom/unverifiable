@@ -11,7 +11,7 @@ body {
 
 * {
   border-style: solid;
-  border-width: 0;
+  border-width: 1px;
   border-color: red
 }
 
@@ -21,6 +21,11 @@ body {
   background-color: White;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Roboto', san-serif;
+}
+
+#skill-salad {
+
 }
 
 section {
@@ -56,6 +61,8 @@ h2, #header {
 
 section h2 {
   margin: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 40px;
   background-color: Silver;
   font-size: 1.2rem;
@@ -75,6 +82,10 @@ section > div {
   width: 20%;
 }
 
+.title {
+  font-weight: bold;
+}
+
 .location, .github {
   width: 16%;
   text-align: right;
@@ -84,4 +95,11 @@ section > div {
   height: 1in;
 }
 
+.w1, .w2, .w3 {
+  font-size: 0.5rem;
+}
+
+.w4, .w5, .w6 {
+  font-size: 1rem;
+}
 
