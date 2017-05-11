@@ -3,9 +3,10 @@
 
 <head>
   <title>Ransom Byers: Software Engineer</title>
-  <link rel="stylesheet" href="../assets/stylesheets/resume.css"
+  <link rel="stylesheet" href="../assets/stylesheets/resume.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
 
 <body>
@@ -33,38 +34,37 @@
     <h2> Skill Salad </h2>
     <div id="skill-salad"> </div>
     <script type="text/javascript">
-      var word_array = [
-          {text: "Ruby", weight: 9},
-          {text: "C++", weight: 7},
-          {text: "Python", weight: 7},
-          {text: "SQL", weight: 8},
-          {text: "Ruby on Rails", weight: 8},
-          {text: "Matlab", weight: 8},
-          {text: "Unix/Linux", weight: 9},
-          {text: "AJAX", weight: 8},
-          {text: "CSS", weight: 7},
-          {text: "Capybara", weight: 6},
-          {text: "RSpec", weight: 8},
-          {text: "Agile Methodologies", weight: 7},
-          {text: "Prioritization", weight: 9},
-          {text: "User Oriented Design", weight: 9},
-          {text: "Test Driven Design", weight: 6},
-          {text: "Quality Assurance", weight: 5},
-          {text: "Process Management", weight: 5},
-          {text: "Unity", weight: 3},
-          {text: "Java", weight: 2},
-          {text: "HTML5", weight: 6},
-          {text: "Pair Programming", weight: 7},
-          {text: "Machine Learning", weight: 5},
-          {text: "Automation Tools", weight: 4},
-          {text: "Django", weight: 2},
-          {text: "OaaS", weight: 1},
-          {text: "Sass", weight: 4},
+      var word_list = [
+          ["Ruby", 9],
+          ["C++", 7],
+          ["Python", 7],
+          ["SQL", 8],
+          ["Ruby on Rails", 8],
+          ["Matlab", 8],
+          ["Unix/Linux", 9],
+          ["AJAX", 8],
+          ["CSS", 7],
+          ["Capybara", 6],
+          ["RSpec", 8],
+          ["Agile Methodologies", 7],
+          ["Prioritization", 9],
+          ["User Oriented Design", 9],
+          ["Test Driven Design", 6],
+          ["Quality Assurance", 5],
+          ["Process Management", 5],
+          ["Unity", 3],
+          ["Java", 2],
+          ["HTML5", 6],
+          ["Pair Programming", 7],
+          ["Machine Learning", 5],
+          ["Automation Tools", 4],
+          ["Django", 2],
+          ["OaaS", 1],
+          ["Sass", 4],
       ];
 
       $(function() {
-        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
-        $("#skills").jQCloud(word_array);
+        WordCloud(document.getElementById('skill-salad'), {list: word_list})
       });
     </script>
 
