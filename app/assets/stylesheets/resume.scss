@@ -21,7 +21,6 @@ body {
   background-color: White;
   margin-left: auto;
   margin-right: auto;
-  font-family: Verdana;
 }
 
 section {
@@ -34,10 +33,17 @@ section {
 section#header {
   margin-left: 15%;
   margin-right: 15%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: Silver;
   text-align: center;
+}
+
+h2, #header {
+  font-family: 'Arvo', serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 #name {
@@ -52,6 +58,7 @@ section h2 {
   margin: 0;
   padding-left: 40px;
   background-color: Silver;
+  font-size: 1.2rem;
 }
 
 section > div {
