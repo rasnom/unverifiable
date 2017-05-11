@@ -3,7 +3,6 @@
 
 <head>
   <title>Ransom Byers: Software Engineer</title>
-  <link rel="stylesheet" href="../assets/stylesheets/resume.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -36,35 +35,43 @@
     <script type="text/javascript">
       var word_list = [
           ["Ruby", 9],
-          ["C++", 7],
-          ["Python", 7],
-          ["SQL", 8],
-          ["Ruby on Rails", 8],
-          ["Matlab", 8],
+          ["C++", 6],
+          ["Python", 8],
+          ["SQL", 9],
+          ["Ruby on Rails", 7],
+          ["Matlab", 7],
           ["Unix/Linux", 9],
-          ["AJAX", 8],
+          ["AJAX", 7],
           ["CSS", 7],
           ["Capybara", 6],
-          ["RSpec", 8],
+          ["RSpec", 7],
           ["Agile Methodologies", 7],
-          ["Prioritization", 9],
-          ["User Oriented Design", 9],
+          ["Prioritization", 6],
+          ["User Oriented Design", 8],
           ["Test Driven Design", 6],
           ["Quality Assurance", 5],
           ["Process Management", 5],
-          ["Unity", 3],
-          ["Java", 2],
+          ["Unity", 4],
+          ["Java", 4],
           ["HTML5", 6],
           ["Pair Programming", 7],
           ["Machine Learning", 5],
-          ["Automation Tools", 4],
-          ["Django", 2],
-          ["OaaS", 1],
-          ["Sass", 4],
+          ["Automation Tools", 5],
+          ["Django", 4],
+          ["OaaS", 4],
+          ["Sass", 5],
       ];
 
       $(function() {
-        WordCloud(document.getElementById('skill-salad'), {list: word_list})
+        WordCloud(document.getElementById('skill-salad'), {
+          list: word_list,
+          weightFactor: "4",
+          color: "black",
+          shape: "circle",
+          ellipticity: "0.1",
+          drawWoutOfBound: "true",
+          gridSize: "1"
+        });
       });
     </script>
 
