@@ -1,7 +1,7 @@
 require "rails_helper"
 
 
-RSpec.feature 'Ambient sound indicator', :type => :feature do
+RSpec.feature 'Ambient sound indicator/selector', :type => :feature do
   scenario 'User visits any page' do
     visit '/'
 
