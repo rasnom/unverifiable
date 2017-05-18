@@ -81,21 +81,17 @@ section > div {
 
 .company, .project-name, .title, .role, #email{
   font-weight: bold;
-  padding-right: 5px;
+  padding-right: 0;
 }
 
 .title, .role, .description, .github, .location, .degree, .blurb, #phone {
   padding-left: 8px;
+  margin-left: 8px;
   border-left: 1px solid Black;
-}
-
-.dates, .live {
-  padding-right: 8px;
 }
 
 .school {
   float: left;
-  padding-right: 8px;
 }
 
 .location, .live, .github {
