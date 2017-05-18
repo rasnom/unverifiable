@@ -25,11 +25,10 @@ body {
   font-family: 'Roboto', san-serif;
 }
 
-
 section {
   margin-left: 0.1in;
   margin-right: 0.1in;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -45,7 +44,6 @@ h2, #name, #tagline {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 
 #name {
   font-size: 1.5rem;
@@ -78,14 +76,26 @@ section > div {
 
 .location, .dates, .github, #linked-in{
   float: right;
+  padding-left: 1px;
 }
 
-.company, .project-name, .title, .role, {
+.company, .project-name, .title, .role, #email{
   font-weight: bold;
+  padding-right: 5px;
 }
 
-.school, #phone {
+.title, .role, .description, .github, .location, .degree, .blurb, #phone {
+  padding-left: 8px;
+  border-left: 1px solid Black;
+}
+
+.dates, .live {
+  padding-right: 8px;
+}
+
+.school {
   float: left;
+  padding-right: 8px;
 }
 
 .location, .live, .github {
@@ -107,4 +117,8 @@ a {
 
 .hidden {
   display: none
+}
+
+.under-review {
+  font-style: italic;
 }
