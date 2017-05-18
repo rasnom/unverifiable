@@ -5,6 +5,7 @@
 /*
 *= require jqcloud
 */
+
 body {
   background-color: White;
 }
@@ -24,42 +25,33 @@ body {
   font-family: 'Roboto', san-serif;
 }
 
-#skill-salad {
-
-}
-
 section {
-  margin-left: 0.5in;
-  margin-right: 0.5in;
-  margin-bottom: 15px;
+  margin-left: 0.1in;
+  margin-right: 0.1in;
+  margin-bottom: 10px;
   padding: 0;
 }
 
 section#header {
-  margin-left: 0.5in;
-  margin-right: 0.5in;
-  padding-top: 15px;
-  padding-bottom: 15px;
   background-color: #E0E0E0;
-  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 2px;
 }
 
-h2, #header {
+h2, #name, #tagline {
   font-family: 'Arvo', serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-
 #name {
-  font-size: 2.5rem;
-  margin-bottom: 0;
+  font-size: 1.5rem;
 }
 
 #tagline {
+  float: right;
   font-size: 1.5rem;
-  margin-top: 0;
 }
 
 section h2 {
@@ -79,24 +71,35 @@ ul {
 section > div {
   margin-right: 0.2in;
   margin-left: 0.2in;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .location, .dates, .github, #linked-in{
   float: right;
+  padding-left: 1px;
 }
 
-.company, .school, #phone {
-  float: left;
-  width: 25%;
-}
-
-.title {
+.company, .project-name, .title, .role, #email{
   font-weight: bold;
+  padding-right: 5px;
 }
 
-.location, .github {
-  width: 20%;
+.title, .role, .description, .github, .location, .degree, .blurb, #phone {
+  padding-left: 8px;
+  border-left: 1px solid Black;
+}
+
+.dates, .live {
+  padding-right: 8px;
+}
+
+.school {
+  float: left;
+  padding-right: 8px;
+}
+
+.location, .live, .github {
+  float: right;
   text-align: right;
 }
 
@@ -112,8 +115,10 @@ a {
   font-style: italic;
 }
 
-#projects .name {
-  font-weight: bold;
-  float: left;
-  width: 25%;
+.hidden {
+  display: none
+}
+
+.under-review {
+  font-style: italic;
 }
